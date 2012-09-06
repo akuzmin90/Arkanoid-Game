@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bckground"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/title_desc"
+        android:src="@drawable/title" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="69dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignTop="@+id/aboutButton"
+        android:src="@drawable/drakon" />
+
+    <ImageButton
+        android:id="@+id/newGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tableRow1"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="20dip"
+        android:background="@null"
+        android:contentDescription="@string/new_game_desc"
+        android:src="@drawable/new_game_selector" />
+
+    <ImageButton
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newGameButton"
+        android:layout_below="@+id/newGameButton"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:contentDescription="@string/about_desc"
+        android:src="@drawable/about_selector" />
+
+    <ImageButton
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aboutButton"
+        android:layout_below="@+id/aboutButton"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:contentDescription="@string/exit_desc"
+        android:src="@drawable/exit_selector" />
+
+</RelativeLayout>
